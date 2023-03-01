@@ -1,0 +1,273 @@
+:root {
+    --body-font: verdana;
+    --headings: 'PT Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+    
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* p {
+    border: 1px solid yellowgreen;
+} */
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: var(--headings);
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Clases reutilizables */
+.container {
+    max-width: 1024px;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 150px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo__img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo__text {
+    font-family: var(--headings);
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: papayawhip;
+}
+
+.text--bold {
+    font-weight: 700;
+}
+
+.nav__list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav__list a {
+    color: papayawhip;
+}
+
+.nav__item:hover .nav__link {
+    border-bottom: 1px solid papayawhip;
+}
+
+/* Hero */
+.hero {
+    background-image: url("https://images.pexels.com/photos/1959052/pexels-photo-1959052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0009;
+}
+
+.hero .container{
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 1.75rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.hero__description {
+    padding: 0 3rem;
+}
+
+/* Blog */
+.blog {
+    padding: 3rem 0;
+}
+
+.blog__title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.blog__article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+    /* gap: 3rem; */
+}
+
+.blog__info {
+    padding: .8rem;
+}
+
+.blog__name {
+    font-size: 1.5rem;
+}
+
+.blog__image {
+    border-radius: 60px;
+}
+
+.blog__link {
+    font-family: var(--headings);
+    background-color: papayawhip;
+    color: black;
+    font-size: 17px;
+    text-align: center;
+    display: block;
+    padding: .75rem 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* Image parallax */
+.image__parallax {
+    background-image: url("https://source.unsplash.com/random/1920×1080/?dogs");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.image__top {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: rotate(180deg);
+    color: #222;
+}
+
+.image__bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #222;
+}
+
+/* Adoption */
+.adoption {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.adoption__title {
+    font-size: 2.5rem;
+}
+
+/* Footer */
+.footer {
+    padding-bottom: 50px ;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.footer .logo__text, .footer .nav__link {
+    color: white;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+    .header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 2rem;
+    }
+
+    .blog__articles .blog__article:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .blog__article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .blog__image {
+        width: 50%;
+        height: 400px;
+    }
+
+    .blog__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .blog__info {
+        width: 50%;
+    }
+}
