@@ -219,6 +219,7 @@ img {
 
 .adoption__title {
     font-size: 2.5rem;
+    margin-top: 0;
 }
 
 .adoption__description {
@@ -258,6 +259,22 @@ img {
         margin: 0 2rem;
     }
 
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero .container{
+        height: 600px;
+    }
+
+    .nav__link {
+        font-size: 1.25rem;
+    }
+
+    .hero__description {
+        font-size: 1.3rem;
+    }
+
     .blog__articles .blog__article:nth-child(even) {
         flex-direction: row-reverse;
     }
@@ -273,6 +290,15 @@ img {
         height: 400px;
     }
 
+    .blog__name {
+        font-size: 2.3rem;
+        margin-top: 0;
+    }
+
+    .blog__description {
+        font-size: 1rem;
+    }
+
     .blog__image img {
         width: 100%;
         height: 100%;
@@ -282,6 +308,22 @@ img {
 
     .blog__info {
         width: 50%;
+    }
+    
+    .blog__link {
+        width: max-content;
+    }
+
+    .blog__article {
+        gap: 1.5rem; 
+    }
+
+    .adoption__title {
+        font-size: 4.5rem;
+    }
+
+    .adoption__description {
+        font-size: 1.25rem;
     }
 }
 
@@ -297,5 +339,13 @@ img {
 
     .adoption {
         padding-top: 0;
+    }
+
+    .blog__article {
+        gap: 3rem; 
+    }
+
+    .hero__description {
+        font-size: 1.5rem;
     }
 }
