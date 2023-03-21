@@ -13,7 +13,7 @@
 
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header__section">
       <div class="container">
         <a href="/" class="logo">
           <img class="logo__img" src="pow.svg" alt="logo">
@@ -24,7 +24,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">About us</a>
+              <a href="#header__section" class="nav__link btn__aboutMe">About me</a>
             </li>
 
             <li class="nav__item">
@@ -137,7 +137,7 @@
           <h2 class="adoption__title">Adoptions</h2>
           <p class="adoption__description">Do you want to adopt a dog? Remember that this decision is very important. A dog is one more member of the family, and therefore you must teach him and protect him throughout his life.
           </p>
-          <button type="button" class="blog__link btn__adoptions">Click here</button>
+          <button type="button" class="blog__link btn__adoptions">Make an adoption</button>
         </div>
       </section>
       
@@ -154,7 +154,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">About us</a>
+              <a href="#" class="nav__link">Home</a>
             </li>
     
             <li class="nav__item">
@@ -164,7 +164,7 @@
         </nav>
 
         <div class="creator__container">
-          <p class="creator"> Developed by @diegotellezc</p>
+          <p class="creator">Developed by @diegotellezc</p>
           <a href="https://github.com/diegotellezc" target="_blank">
             <img src="./iconsDogsBlog/github.png" alt="GitHub icon" width="30rem">
           </a>
@@ -181,6 +181,19 @@
       </div>
 
     </footer>
+
+    <!-- Modal About me -->
+    <section class="modal__global modal__aboutMe">
+      <div class="modal__container">
+          <img src="./assets/img/Diego Tellez.jpeg" alt="Diego Tellez picture" class="modal__img">
+          <h2 class="modal__title">Hey, I'm Diego Téllez!</h2>
+          <p class="modal__paragraph modal__paragraph__m1">Frontend developer always ready to undertake new projects and face new challenges. I am Professional in Audiovisual Media, with more than 8 years working as a video editor in big teams. I'm an animal lover and I have a little dog called "Noa Canoa". She is five years old and I really love her 🐶♥</p>
+          
+          <button type="button" class="modal__close__global modal__close">Close</button>
+      </div>
+  </section>
+
+  <script src="main.js"></script>
   </body>
 
 </html>

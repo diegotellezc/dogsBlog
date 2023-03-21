@@ -316,4 +316,8 @@ img {
     .hero__description {
         font-size: 1.5rem;
     }
+    
+    .image__top {
+        display: none;
+    }
 }
