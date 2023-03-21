@@ -1,16 +1,32 @@
 // Modal About me
 
-const btnAdoptions = document.querySelector(".btn__aboutMe")
+const btnAboutMe = document.querySelector(".btn__aboutMe")
 const modalAboutMe = document.querySelector(".modal__aboutMe")
-const btnModalClose = document.querySelector(".modal__close")
+const btnModalCloseAbout = document.querySelector(".modal__close__aboutme")
 
-btnAdoptions.addEventListener("click", function (e) {
+btnAboutMe.addEventListener("click", function (e) {
     e.preventDefault()
-    console.log("Boton oprimido")
     modalAboutMe.classList.add("modal--show")
 })
 
-btnModalClose.addEventListener("click", function (e) {
+btnModalCloseAbout.addEventListener("click", function (e) {
     e.preventDefault()
     modalAboutMe.classList.remove("modal--show")
+})
+
+
+
+// Modal Adoptions
+
+const btnAdoptions = document.querySelector(".btn__adoptions")
+const modalAdoptions = document.querySelector(".modal__adoptions")
+const btnModalCloseAdoptions = document.querySelector(".modal__close__adoptions")
+
+btnAdoptions.addEventListener("click", function (e) {
+    e.preventDefault()
+    modalAdoptions.classList.add("modal--show")
+})
+
+btnModalCloseAdoptions.addEventListener("click", function (e) {
+    modalAdoptions.classList.remove("modal--show")
 })

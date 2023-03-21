@@ -44,6 +44,38 @@ img {
     max-width: 100%;
 }
 
+input {
+    width: 80%;
+    height: 3rem;
+    border-radius: .8rem;
+    border-style: none;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+input::placeholder {
+    color: gray;
+    font-style: italic;
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    display: flex;
+    justify-self: flex-start;
+    padding: 0 4rem;
+}
+
+textarea {
+    width: 80%;
+    height: 100%;
+    border-radius: .8rem;
+    border-style: none;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
 /* Clases reutilizables */
 .container {
     max-width: 1024px;
@@ -235,6 +267,7 @@ img {
 .btn__adoptions {
     margin: 2rem auto 0;
     cursor: pointer;
+    width: fit-content;
 }
 
 
@@ -343,6 +376,10 @@ img {
     transform: var(--transform);
     transition: var(--transition);
     overflow-y: auto;
+}
+
+.modal__container h2 {
+font-size: 2rem;
 }
 
 
