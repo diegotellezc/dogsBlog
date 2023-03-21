@@ -93,6 +93,7 @@ img {
 .nav__list {
     display: flex;
     gap: 1.5rem;
+    padding: 0;
 }
 
 .nav__list a {
@@ -186,6 +187,10 @@ img {
     width: 100%;
 }
 
+.blog__link:hover {
+    background-color: rgb(246, 215, 169);
+}
+
 /* Image parallax */
 .image__parallax {
     background-image: url("https://source.unsplash.com/random/1920×1080/?dogs");
@@ -220,11 +225,19 @@ img {
 .adoption__title {
     font-size: 2.5rem;
     margin-top: 0;
+    margin-bottom: 2rem;
 }
 
 .adoption__description {
     margin: 0 2rem;
 }
+
+.btn__adoptions {
+    margin: 2rem auto 0;
+    cursor: pointer;
+}
+
+
 
 /* Footer */
 .footer {
